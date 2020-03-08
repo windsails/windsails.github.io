@@ -112,7 +112,7 @@ footer .aasBottom {
     padding:30px 0 10px 0;
 }
 
-/* 禁止移动端的copy JonathanYang, 20200308  */
+/* 禁止移动端的copy JonathanYang, 20200308, 但似乎没有效果？  */
 * {
     -webkit-touch-callout:none;
     -webkit-user-select:none;
@@ -120,4 +120,10 @@ footer .aasBottom {
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+    -webkit-tap-highlight-color:transparent; /*取消点击链接或者JavaScript可点击元素赋给的高亮背景色*/
+}
+
+/* 对于iOS，又要重新打开？ */
+input , textarea{
+	-webkit-user-select:auto;
 }
