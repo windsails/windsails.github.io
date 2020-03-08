@@ -9,7 +9,7 @@
 <!-- header的定义 -->
 <head>
   <meta charset="utf-8">
-  <title>A.A.S 產品介紹</title>
+  <title>A.A.S 軟體介紹</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Website for AAS" />
   <meta name="author" content="Jonathan Yang" />
@@ -25,40 +25,44 @@
 </head>
 
 <!-- body的定义 -->
-<body>
+<!-- 增加滚动监听 JonathanYang, 20200308 -->
+<body data-spy="scroll" data-target="#aasNavbars" data-offset="20">
   <!-- ======= Header ======= -->
   <header id="aasHeader" class="fixed-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S</a>
       <!-- 顶部导航条的按钮 -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- 顶部导航条 aasNavBarOff-collapse -->
-      <div class="collapse navbar-collapse justify-content-end" id="aasNavbars">
+      <div class="collapse navbar-collapse" id="aasNavbars">
         <!-- ml-auto 居右对齐； mr-auto 居左对齐；Jonathan Yang, 20200307 -->
-        <ul class="navbar-nav ml-auto navBarRightSpace" >   
-          <li class="nav-item active">
-            <a class="nav-link" href="#aasInfo">首 頁 <span class="sr-only">(current)</span></a>
+        <ul class="navbar-nav ml-auto navBarRightSpace" >
+          <!-- active 的状态切换 统一由滚动监听管理 JonathanYang, 20200308 -->   
+          <!-- <li class="nav-item active"> -->
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#aasInfo">首 頁 <span class="sr-only">(current)</span></a> -->
+            <a class="nav-link navMenuItem" href="#aasInfo" >首 頁</a>
           </li>
           <!-- 软件列表 -->
           <li class="nav-item">
-            <a class="nav-link" href="#prodInfo">軟體列表</a>
+            <a class="nav-link navMenuItem" href="#prodInfo" >軟體列表</a>
           </li>
 
           <!-- 经验分享 未来扩展部分 -->
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#">使用經驗</a>
+            <a class="nav-link" href="#" id="mExp">使用經驗</a>
           </li> -->
 
           <!-- 易学知识 未来扩展部分-->
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#">易學知識</a>
+            <a class="nav-link" href="#" id="mYi">易學知識</a>
           </li> -->
 
           <!-- 联系我们-->
           <li class="nav-item">
-            <a class="nav-link" href="#contractInfo">聯系我們</a>
+            <a class="nav-link navMenuItem" href="#contractInfo" >聯系我們</a>
           </li>
           
           <!-- 切换语言-->
@@ -291,8 +295,8 @@
   <script src="libs/jquery.easing/jquery.easing.min.js"></script>
 
   <!-- AAS自己定义的JS库文件 -->
-  <!-- 注释掉，使用回bootstrap自带的效果 -->
-  <script src="js/aasNavBar.js"></script>
+  <!-- 注释掉，使用回bootstrap自带的滚动监听管理 -->
+  <!-- <script src="js/aasNavBar.js"></script> -->
   <script src="js/aasMain.js"></script>
 
   <script>
