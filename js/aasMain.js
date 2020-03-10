@@ -1,4 +1,13 @@
 
+/**  Start Of 百度的统代码, JonathanYang, 20200310 */
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?65dfa9d7863432c04b12fbb0dd737d3f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+/** End of 百度的统计代码, JonathanYang, 20200310 */
 
 /*  激活popover */
 $(function () {
