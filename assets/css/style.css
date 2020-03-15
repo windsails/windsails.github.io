@@ -1,6 +1,7 @@
 /* === for AAS website === based on Boostrap 4.4.1 */
 
-@import url('font-awesome.css');
+/* @import url('font-awesome.css');   */
+@import url('../font/font-awesome4.2/css/font-awesome.min.css');
 
 .slogan {
 	background: #000 url(../img/bg/bg-2.jpg) 50% 0 repeat;
@@ -66,6 +67,11 @@
     text-align:center;
 }
 
+/* 截屏的显示位置 */
+.img_gallery {
+    text-align: center;
+    margin: 0 auto;
+}
 
 /* Back to top button */
 .back-to-top {
@@ -95,6 +101,17 @@
     transition: background 0.2s ease-in-out;
   }
 
+/** 设置按钮有一定的空间间隔 */
+.btn_aas_space {
+    margin:2px 2px 2px 2px;    
+}
+
+.centerVText {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+
 /* Footer */
 /* footer {
 	float:left;
@@ -104,6 +121,7 @@
 	margin:0;
 	padding:40px 0 0 0;
 } */
+
 
 footer .aasBottom {
     text-align:center;
