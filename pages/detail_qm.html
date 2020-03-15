@@ -1,5 +1,5 @@
 <!-- ======== aas4calcapps.com website的实现，主要采用bootstrap技术  ========== -->
-<!-- ======== 论八字的详细信息                                       ========== -->
+<!-- ======== 奇门的详细信息                                       ========== -->
 <!-- ======== Author: Jonathan Yang, 2020/03/14                   ========== -->
 <!-- ======== Default Lang: 繁体                                   ========== -->
 <!-- ======== 后缀: 无 - 繁体；_cn: 简体 _en: 英文                   ========== -->
@@ -10,7 +10,7 @@
 <!-- header的定义 -->
 <head>
   <meta charset="utf-8">
-  <title>A.A.S 軟體介紹 - 論八字</title>
+  <title>A.A.S 軟體介紹 - 奇門</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Website for AAS" />
   <meta name="author" content="Jonathan Yang" />
@@ -34,7 +34,7 @@
   <!-- ======= Header ======= -->
   <header id="aasHeader" class="fixed-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/icalc8words_icon_72.png" alt="" width="40" height="40" /></a>
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/calcqm_icon_72.png" alt="" width="40" height="40" /></a>
       <!-- 顶部导航条的按钮 -->
       <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -82,7 +82,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">切換語言</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item navMenuItem" href="#">繁體中文</a>
-              <a class="dropdown-item" href="detail_8z_cn.html">简体中文</a>
+              <a class="dropdown-item" href="detail_qm_cn.html">简体中文</a>
             </div>
           </li>          
         </ul>
@@ -101,7 +101,7 @@
     <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
     <div class="row sectionHeaderRow">      
         <div class="col">
-          <h3><span class="sectionHeaderText">【論八字】詳情</span></h3>
+          <h3><span class="sectionHeaderText">【奇門】詳情</span></h3>
         </div>
     </div>    
         <!-- 定义 第一行3个产品简单介绍 -->
@@ -111,11 +111,11 @@
         <div class="row">
           <div class = "col-4"></div>
           <div class = "col-4">
-            <img class="img-fluid" src="../assets/img/prod/calc8words_icon_512.png" alt="論八字">
+            <img class="img-fluid" src="../assets/img/prod/calcqm_icon_512.png" alt="奇門">
               </div>
               <div class = "col-4"></div>
         </div>
-        <h5> 專業的八字排盤系統，可以準確快捷排出四柱,當前大運,流年盤等。</h5>       
+        <h5>專業的奇門軟件，支持置閏/拆補/茅山/陰盤/手工等定局法，支持刻家/時家/日家/月家/年家奇門，支持用戶自己配制轉盤/飛盤/轉飛結合的起盤方式，結合奇門經典古籍，提供豐富的評論及盤面分析提示信息。</h5>       
       </div>
       <div class="col-3"></div>
   </div>
@@ -134,20 +134,20 @@
   <div class="centerText"><span>【點擊圖片可看大圖】</span></div>   
 
   <div id="links" class="img_gallery">
-    <a href="../assets/img/pic8z/Input_ios.png" title="輸入頁面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Input_ios.png" class="img-thumbnail" alt="輸入頁面" />
+    <a href="../assets/img/picqm/Input_qm_ios.png" title="輸入頁面" data-gallery>
+      <img src="../assets/img/picqm/thumbnails/Input_qm_ios.png" class="img-thumbnail" alt="輸入頁面" />
     </a>
-    <a href="../assets/img/pic8z/Base_ios.png" title="基本信息頁面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Base_ios.png" class="img-thumbnail" alt="基本信息頁面" />
+    <a href="../assets/img/picqm/Pan_qm_ios.png" title="盤面信息頁面" data-gallery>
+      <img src="../assets/img/picqm/thumbnails/Pan_qm_ios.png" class="img-thumbnail" alt="盤面信息頁面" />
     </a>
-    <a href="../assets/img/pic8z/Bp_ios.png" title="基本盤頁面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Bp_ios.png" class="img-thumbnail" alt="基本盤頁面" />
+    <a href="../assets/img/picqm/Fz_qm_ios.png" title="輔助盤頁面" data-gallery>
+      <img src="../assets/img/picqm/thumbnails/Fz_qm_ios.png" class="img-thumbnail" alt="輔助盤頁面" />
     </a>
-    <a href="../assets/img/pic8z/Xp_ios.png" title="細盤頁面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Xp_ios.png" class="img-thumbnail" alt="細盤頁面" />
+    <a href="../assets/img/picqm/Pz_qm_ios.png" title="評註頁面" data-gallery>
+      <img src="../assets/img/picqm/thumbnails/Pz_qm_ios.png" class="img-thumbnail" alt="評註頁面" />
     </a>
-    <a href="../assets/img/pic8z/Dy_ios.png" title="大運盤頁面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Dy_ios.png" class="img-thumbnail" alt="大運盤頁面" />
+    <a href="../assets/img/picqm/Data_qm_ios.png" title="數據管理頁面" data-gallery>
+      <img src="../assets/img/picqm/thumbnails/Data_qm_ios.png" class="img-thumbnail" alt="數據管理頁面" />
     </a>
   </div>  
 
@@ -180,7 +180,7 @@
   <div class="row">
     <div class="col"></div>
     <div class="col-8">
-      <p>論八字(iCalc8Words)是一個計算八字的算命軟體。根據輸入的西曆或農曆時間，排出命主的八字資訊，大運，小運，流年，空亡，胎息，胎元，命宮及五行信息等；細盤功能(四柱，當前大運，流年盤)；二十八宿信息。</p>
+      <p>奇門遁甲是中國古代術數，是三式之首。它被認為最有理法，被稱為黃老道家最高層次的預測學，號稱帝王之學。它的本質是一門高等的天文物理學，表達了太陽系八大行星和地球磁場作用的情況。它是先哲對宇宙自然變化與萬物運動規律的一種哲學表達，是對自然原型的一種象數模擬。它遵循天人合一的哲學觀，將陰陽五行與四時八方相結合，運用系統符號（九星，八門，九宮，奇儀和八神）之間的活動，構成了一個動態的平衡生態系統。通過對這些系統符號在盤面上的分析，人們可以對婚戀，工作，事業，風水，財運等進行預測，調理，化解以及運籌。</p>
       <p>本軟體主要是提供給對道家和玄學有一定研究或者興趣的人士學習實踐之用。軟體在推出後，得到東南亞，香港，臺灣和中國內地用家的多方面好評，結果也經過實踐檢驗，具有一定的準確性，本著推廣交流的目的，也希望得到更多用家回饋意見。</p>
     </div>
     <div class="col"></div>
@@ -191,18 +191,28 @@
     <div class="col-8">
       <div class="container">
         <ul class="list-group">
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>對命例的資料做刪除或者修改；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支援夜子時的處理手法及偏好設置；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>年月日時柱排列從左到右的可選；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>強大實用的細盤功能，大運和流年互相關聯，點擊大運流年可以互動大運未起以小運代替，小運和流年互相關聯；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>袁天罡稱骨；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>生肖以立春或農曆年為標準選項；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>盤面五色顯示，五行屬性及力量對比更加突出；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>细盘支持流月五色显示；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>命例资料支持公历，农历及四柱输入；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>包含《三命通会》《神峰通考》等相关评语；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>命例可資料模糊查詢；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支持簡繁中文；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>輸入時間等基本信息，可以起奇門盤。參數還可以根據實際習慣選擇類型及盤面起法等；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>盤面顯示對應的四柱信息，節氣信息，日空，時空，節氣信息，局數信息，值符，值使，天地盤，九星，八神，八門，九宮等信息；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>根據盤面結果，對於轉盤的刻家/時家/月家/年家對應的奇門御定分析，日家奇門也提供對應的分析；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>數據列表，提供強大的匹配查詢。允許數據備份恢復等；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>可以隨意維護數據列表中的數據。例如刪除，修改等；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>提供參數設置，根據實際習慣進行配置；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支持刻家/時家/日家/月家/年家奇門；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支持轉盤/飛盤/轉飛結合的排盤方式；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支持用戶自己配制轉盤/飛盤/轉飛結合的起盤方式；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>允許即時查看前後盤的詳細信息；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>提供中文簡體/繁體的顯示方式；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>根據屏幕大小，自動適配Pad和手機版本；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>顏色標記門星宮神的五行(可配置)；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>馬星和空亡, 門暗干標記(可配置)；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支持晚子算當天或隔天(可配置)；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>轉盤中宮寄坤宮或艮宮(可配置)；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加盤面左右手勢開關；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加內外盤標記，超過50個吉凶格及每個宮位的克應分析；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>盤面點擊宮位彈出本宮的分析信息；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加輔助盤，可看先天宮位信息及節氣等；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>輔助盤有奇門用神提示及年命查詢等功能；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加奇門找局功能；</li>
           <li class="list-group-item list-group-item-dark"><i class="fa fa-list-ol"></i>...更多功能請下載使用體驗。</li>
         </ul>
       </div>  
@@ -234,10 +244,10 @@
             <div class="row">
               <div class="col-sm-3"><span class="centerVText">收費專業</span></div>
               <div class="col-sm-3">
-                <a href="https://itunes.apple.com/cn/app/%E8%AB%96%E5%85%AB%E5%AD%97-%E5%AF%A6%E7%94%A8/id504176984?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+                <a href="https://itunes.apple.com/cn/app/%E5%A5%87%E9%96%80-%E5%AF%A6%E7%94%A8/id1101997011?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
               </div>
               <div class="col-sm-3">
-                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc8wordsp" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calcqmp" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
               </div>
               <div class="col-sm-3">
               </div>
@@ -249,13 +259,13 @@
             <div class="row">
               <div class="col-sm-3"><span class="centerVText">免費廣告</span></div>
               <div class="col-sm-3">
-                <a href="https://itunes.apple.com/cn/app/icalc8words/id466778987?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+                <a href="https://itunes.apple.com/cn/app/qi-men-free/id1101995100?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
               </div>
               <div class="col-sm-3">
-                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc8words" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calcqm" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
               </div>
               <div class="col-sm-3">
-                <a href="http://www.appchina.com/app/gz.aas.calc8words" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 應用匯</a>
+                <a href="http://www.appchina.com/app/gz.aas.calcqm" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 應用匯</a>
               </div>
             </div>
           </td>
