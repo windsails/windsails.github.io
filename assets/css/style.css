@@ -29,6 +29,11 @@
     text-align:center;
 }
 
+/** 小字 */
+.aas_smallText {
+    font-size: 10px;
+}
+
 .prodrow {
 	height:auto;
     margin:0;

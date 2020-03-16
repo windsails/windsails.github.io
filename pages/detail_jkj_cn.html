@@ -1,0 +1,314 @@
+<!-- ======== aas4calcapps.com website的实现，主要采用bootstrap技术  ========== -->
+<!-- ======== 奇门的详细信息                                       ========== -->
+<!-- ======== Author: Jonathan Yang, 2020/03/14                   ========== -->
+<!-- ======== Default Lang: 繁体                                   ========== -->
+<!-- ======== 后缀: 无 - 繁体；_cn: 简体 _en: 英文                   ========== -->
+
+<!doctype html>
+<html lang="en">
+
+<!-- header的定义 -->
+<head>
+  <meta charset="utf-8">
+  <title>A.A.S 软体介绍 - 金口诀</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website for AAS" />
+  <meta name="author" content="Jonathan Yang" />
+  <!-- 公共的函数库styles -->
+  <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- for Gallery -->
+  <link href="../libs/gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
+
+  <!-- aasWebsite使用的styles -->
+  <link href="../assets/css/style.css" rel="stylesheet" />
+  <!-- 注释掉，使用回bootstrap自带的效果 -->
+  <!-- <link href="assets/css/aasNavBarOff.css" rel="stylesheet" /> -->
+
+</head>
+
+<!-- body的定义 -->
+<!-- 增加滚动监听 JonathanYang, 20200308 -->
+<!-- 增加不允许按右键 选择copy的功能 JonathanYang, 20200308 -->
+<body data-spy="scroll" data-target="#aasNavbars" data-offset="20" oncontextmenu="return false" onselectstart="return false">
+  <!-- ======= Header ======= -->
+  <header id="aasHeader" class="fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/calcjkj_icon_72.png" alt="" width="40" height="40" /></a>
+      <!-- 顶部导航条的按钮 -->
+      <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 顶部导航条 aasNavBarOff-collapse -->
+      <div class="collapse navbar-collapse" id="aasNavbars">
+        <!-- ml-auto 居右对齐； mr-auto 居左对齐；Jonathan Yang, 20200307 -->
+        <ul class="navbar-nav ml-auto navBarRightSpace" >
+          <!-- 产品页专用的菜单 -->
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailScreens" >应用截屏</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailInfos" >功能介绍</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailDownload" >下 载</a></li>
+
+          <!-- 分割条 只在收缩起来时候起作用 -->
+          <div class="dropdown-divider"></div>
+
+          <!-- active 的状态切换 统一由滚动监听管理 JonathanYang, 20200308 -->   
+          <!-- <li class="nav-item active"> -->
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#aasInfo">首 页 <span class="sr-only">(current)</span></a> -->
+            <a class="nav-link navMenuItem" href="../index_cn.html#aasInfo" >首 页</a>
+          </li>
+          <!-- 软件列表 -->
+          <li class="nav-item">
+            <a class="nav-link navMenuItem" href="../index_cn.html#prodInfo" >软体列表</a>
+          </li>
+
+          <!-- 经验分享 未来扩展部分 -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" id="mExp">使用经验</a>
+          </li> -->
+
+          <!-- 易学知识 未来扩展部分-->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" id="mYi">易学知识</a>
+          </li> -->
+
+          <!-- 联系我们-->
+          <li class="nav-item">
+            <a class="nav-link navMenuItem" href="../index_cn.html#contractInfo" >联系我们</a>
+          </li>
+          
+          <!-- 切换语言-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">切换语言</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item navMenuItem" href="detail_jkj.html">繁体中文</a>
+              <a class="dropdown-item" href="#">简体中文</a>
+            </div>
+          </li>          
+        </ul>
+
+      </div>
+    
+   </nav>
+  </header><!-- End Header -->
+
+<main role="main">
+
+<!-- 详细介绍--标题部分 -->
+<section id="detailHeader">
+  <div class="container">
+    <!-- 标题 -->
+    <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+    <div class="row sectionHeaderRow">      
+        <div class="col">
+          <h3><span class="sectionHeaderText">【金口诀】详情</span></h3>
+        </div>
+    </div>    
+        <!-- 定义 第一行3个产品简单介绍 -->
+    <div class="row prodrow">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <div class="row">
+          <div class = "col-4"></div>
+          <div class = "col-4">
+            <img class="img-fluid" src="../assets/img/prod/calcjkj_icon_512.png" alt="金口诀">
+              </div>
+              <div class = "col-4"></div>
+        </div>
+        <h5>专业的金口诀排盘软件，结合金口诀经典古籍，提供阴阳，五动，三动等详细分析及辅助分析工具。</h5>       
+      </div>
+      <div class="col-3"></div>
+  </div>
+  </div>
+</section>
+
+<!-- 详细介绍--截图部分 -->
+<section id="detailScreens">
+    <!-- 标题 -->
+    <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+    <div class="row sectionHeaderRow">      
+      <div class="col">
+        <h4><span class="sectionHeaderText">应用截屏</span></h4>
+      </div>
+  </div> 
+  <div class="centerText"><span class="aas_smallText">【点击看大图 若网慢需等】</span></div>   
+
+  <div id="links" class="img_gallery">
+    <a href="../assets/img/picjkj/Input_jkj_ios.png" title="输入页面" data-gallery>
+      <img src="../assets/img/picjkj/thumbnails/Input_jkj_ios.png" class="img-thumbnail" alt="输入页面" />
+    </a>
+    <a href="../assets/img/picjkj/Pan_jkj_ios.png" title="盘面信息页面" data-gallery>
+      <img src="../assets/img/picjkj/thumbnails/Pan_jkj_ios.png" class="img-thumbnail" alt="盘面信息页面" />
+    </a>
+    <a href="../assets/img/picjkj/Fz_jkj_ios.png" title="辅助盘页面" data-gallery>
+      <img src="../assets/img/picjkj/thumbnails/Fz_jkj_ios.png" class="img-thumbnail" alt="辅助盘页面" />
+    </a>
+    <a href="../assets/img/picjkj/Fx_jkj_ios.png" title="评注页面" data-gallery>
+      <img src="../assets/img/picjkj/thumbnails/Fx_jkj_ios.png" class="img-thumbnail" alt="评注页面" />
+    </a>
+    <a href="../assets/img/picjkj/Data_jkj_ios.png" title="数据管理页面" data-gallery>
+      <img src="../assets/img/picjkj/thumbnails/Data_jkj_ios.png" class="img-thumbnail" alt="数据管理页面" />
+    </a>
+  </div>  
+
+  <div class="centerText"><span>【以最终版本为准】</span></div>   
+
+    <!-- The Gallery as lightbox dialog -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+    </div>
+
+</section>
+
+<!-- 详细介绍--功能介绍部分 -->
+<section id="detailInfos">
+    <!-- 标题 -->
+    <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+    <div class="row sectionHeaderRow">      
+      <div class="col">
+        <h4><span class="sectionHeaderText">功能介绍</span></h4>
+      </div>
+  </div>    
+  <div class="centerText"><span>&nbsp;</span></div>   <!-- 增加一个空行-->
+
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-8">
+      <p>金口诀又称为“孙膑预测学”，也称为“袖中金”和“大金口”。</p>
+      <p>金口诀是一门从大六壬发展而来的高层预测学，它集太乙，奇门，六壬三式精华于一身。由于大六壬的运算系统比较复杂，由天地盘，四课，三传，神煞等组成，一般人很难学会。在战国时期，孙膑师从鬼谷子学习易学并将大六壬简化成四课（人元，贵神，将神和地分）用来推算人事的吉凶祸福，这就是金口诀。后来，金口诀逐渐流入民间并广泛用于预测世间万象，进而演变为高层预测学。</p>
+    </div>
+    <div class="col"></div>
+  </div>
+
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-8">
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>输入时间，出生年，地分等基本资料，可以起金口诀盘。参数还可以根据实际习惯选择贵人选法等；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>盘面显示对应的四柱信息，节气信息，人元，贵神，将神，地分，月将，空亡及各种相关神煞等信息；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>根据盘面结果，提供阴阳，旬空，空亡，五动/三动，应期等简要分析；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>提供辅助盘，便于随时查询长生12宫等辅助分析工具；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>提供六壬合占盘以及御定六壬金口合占的信息；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>提供分类用神提示；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>提供四位关系分析，相关神煞信息等；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>数据列表，提供强大的匹配查询；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>可以随意维护数据列表中的数据。例如删除，修改等；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>提供数据导入/导出功能，便于数据文件的备份及共享；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>提供参数设置，根据实际习惯进行配置；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>提供中文简体/繁体的显示方式；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>根据屏幕大小，自动适配Pad和手机版本；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-list-ol"></i>...更多功能请下载使用体验。</li>
+        </ul>
+      </div>  
+    </div>
+    <div class="col"></div>
+  </div>
+  
+
+</section>
+
+<!-- 详细介绍--下载部分 -->
+<section id="detailDownload">
+  <!-- 标题 -->
+  <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+  <div class="row sectionHeaderRow">      
+    <div class="col">
+      <h4><span class="sectionHeaderText">应用市场和下载</span></h4>
+    </div>
+</div>    
+<div class="centerText"><span>&nbsp;</span></div>   <!-- 增加一个空行-->
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col-6">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-3"><span class="centerVText">收费专业</span></div>
+              <div class="col-sm-3">
+                <a href="https://itunes.apple.com/cn/app/%E9%87%91%E5%8F%A3%E8%A8%A3-%E5%AF%A6%E7%94%A8/id1085577488?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+              </div>
+              <div class="col-sm-3">
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calcjkjp" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+              </div>
+              <div class="col-sm-3">
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-3"><span class="centerVText">免费广告</span></div>
+              <div class="col-sm-3">
+                <a href="https://itunes.apple.com/cn/app/jin-kou-jue-free/id1085440914?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+              </div>
+              <div class="col-sm-3">
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calcjkj" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+              </div>
+              <div class="col-sm-3">
+                <a href="http://www.appchina.com/app/gz.aas.calcjkj" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 应用汇</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody> 
+    </table>
+  </div>
+  <div class="col"></div>
+</div>
+
+</section>
+
+<!-- 隔开位置 -->
+<section id="detailSpace">
+  <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+  <div class="row sectionHeaderRow">      
+    <div class="col">
+      <h4><span class="sectionHeaderText"></span></h4>
+    </div>
+</section>
+
+</main>
+
+<!-- scrollup -->
+<a href="#" id="backToTopBtn" class="back-to-top">
+  <i class="fa fa-chevron-up icon-square icon-48 active"></i>
+</a>
+
+<!-- footer部分 -->  
+<footer>
+  <row>
+    <div class="aasBottom">
+    <p>&copy; A.A.S 2010-2030 All right reserved</p>
+    </div>
+  </row>
+</footer>
+
+  <!-- 主要的JS的库文件 -->
+  <script src="../libs/jquery/jquery.min.js"></script>
+  <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../libs/jquery.easing/jquery.easing.min.js"></script>
+
+  <!-- for Gallery, 只是产品介绍的页面需要 JonathanYang, 20200315 -->
+  <!-- <script src="../libs/gallery/js/blueimp-gallery.min.js"></script> -->
+  <script src="../libs/gallery/js/jquery.blueimp-gallery.min.js"></script>
+  
+  <!-- AAS自己定义的JS库文件 -->
+  <!-- 注释掉，使用回bootstrap自带的滚动监听管理 -->
+  <script src="../js/aasMain.js"></script>
+
+  <script>
+    </script>
+</body>
+
+</html>
