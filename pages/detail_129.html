@@ -1,5 +1,5 @@
 <!-- ======== aas4calcapps.com website的实现，主要采用bootstrap技术  ========== -->
-<!-- ======== 论八字的详细信息                                       ========== -->
+<!-- ======== 奇门的详细信息                                       ========== -->
 <!-- ======== Author: Jonathan Yang, 2020/03/14                   ========== -->
 <!-- ======== Default Lang: 繁体                                   ========== -->
 <!-- ======== 后缀: 无 - 繁体；_cn: 简体 _en: 英文                   ========== -->
@@ -10,7 +10,7 @@
 <!-- header的定义 -->
 <head>
   <meta charset="utf-8">
-  <title>A.A.S 软体介绍 - 论八字</title>
+  <title>A.A.S 軟體介紹 - 論風水</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Website for AAS" />
   <meta name="author" content="Jonathan Yang" />
@@ -34,7 +34,7 @@
   <!-- ======= Header ======= -->
   <header id="aasHeader" class="fixed-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/icalc8words_icon_72.png" alt="" width="40" height="40" /></a>
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/calc129_icon_72.png" alt="" width="40" height="40" /></a>
       <!-- 顶部导航条的按钮 -->
       <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,9 +44,9 @@
         <!-- ml-auto 居右对齐； mr-auto 居左对齐；Jonathan Yang, 20200307 -->
         <ul class="navbar-nav ml-auto navBarRightSpace" >
           <!-- 产品页专用的菜单 -->
-          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailScreens" >应用截屏</a></li>
-          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailInfos" >功能介绍</a></li>
-          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailDownload" >下 载</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailScreens" >應用截屏</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailInfos" >功能介紹</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailDownload" >下 載</a></li>
 
           <!-- 分割条 只在收缩起来时候起作用 -->
           <div class="dropdown-divider"></div>
@@ -54,35 +54,35 @@
           <!-- active 的状态切换 统一由滚动监听管理 JonathanYang, 20200308 -->   
           <!-- <li class="nav-item active"> -->
           <li class="nav-item">
-            <!-- <a class="nav-link" href="#aasInfo">首 页 <span class="sr-only">(current)</span></a> -->
-            <a class="nav-link navMenuItem" href="../index_cn.html#aasInfo" >首 页</a>
+            <!-- <a class="nav-link" href="#aasInfo">首 頁 <span class="sr-only">(current)</span></a> -->
+            <a class="nav-link navMenuItem" href="../index.html#aasInfo" >首 頁</a>
           </li>
           <!-- 软件列表 -->
           <li class="nav-item">
-            <a class="nav-link navMenuItem" href="../index_cn.html#prodInfo" >软体列表</a>
+            <a class="nav-link navMenuItem" href="../index.html#prodInfo" >軟體列表</a>
           </li>
 
           <!-- 经验分享 未来扩展部分 -->
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#" id="mExp">使用经验</a>
+            <a class="nav-link" href="#" id="mExp">使用經驗</a>
           </li> -->
 
           <!-- 易学知识 未来扩展部分-->
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#" id="mYi">易学知识</a>
+            <a class="nav-link" href="#" id="mYi">易學知識</a>
           </li> -->
 
           <!-- 联系我们-->
           <li class="nav-item">
-            <a class="nav-link navMenuItem" href="../index_cn.html#contractInfo" >联系我们</a>
+            <a class="nav-link navMenuItem" href="../index.html#contractInfo" >聯系我們</a>
           </li>
           
           <!-- 切换语言-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">切换语言</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">切換語言</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item navMenuItem" href="detail_8z.html">繁体中文</a>
-              <a class="dropdown-item" href="#">简体中文</a>
+              <a class="dropdown-item navMenuItem" href="#">繁體中文</a>
+              <a class="dropdown-item" href="detail_129_cn.html">简体中文</a>
             </div>
           </li>          
         </ul>
@@ -101,7 +101,7 @@
     <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
     <div class="row sectionHeaderRow">      
         <div class="col">
-          <h3><span class="sectionHeaderText">【论八字】详情</span></h3>
+          <h3><span class="sectionHeaderText">【論風水】詳情</span></h3>
         </div>
     </div>    
         <!-- 定义 第一行3个产品简单介绍 -->
@@ -111,11 +111,11 @@
         <div class="row">
           <div class = "col-4"></div>
           <div class = "col-4">
-            <img class="img-fluid" src="../assets/img/prod/calc8words_icon_512.png" alt="论八字">
+            <img class="img-fluid" src="../assets/img/prod/calc129_icon_512.png" alt="論風水">
               </div>
               <div class = "col-4"></div>
         </div>
-        <h5> 专业的八字排盘系统，可以准确快捷排出四柱,当前大运,流年盘等。</h5>       
+        <h5>論風水，以玄空飛星為主要理論，結合現代電子羅盤，專業的看風水輔助工具！</h5>       
       </div>
       <div class="col-3"></div>
   </div>
@@ -128,29 +128,30 @@
     <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
     <div class="row sectionHeaderRow">      
       <div class="col">
-        <h4><span class="sectionHeaderText">应用截屏</span></h4>
+        <h4><span class="sectionHeaderText">應用截屏</span></h4>
       </div>
   </div> 
-  <div class="centerText"><span class="aas_smallText">【点击看大图 若网慢需等】</span></div>   
+  <div class="centerText"><span class="aas_smallText">【點擊看大圖 若網慢需等】</span></div>   
 
   <div id="links" class="img_gallery">
-    <a href="../assets/img/pic8z/Input_ios.png" title="输入页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Input_ios.png" class="img-thumbnail" alt="输入页面" />
+    <a href="../assets/img/pic129/Input_129_android.png" title="輸入頁面" data-gallery>
+      <img src="../assets/img/pic129/thumbnails/Input_129_android.png" class="img-thumbnail" alt="輸入頁面" />
     </a>
-    <a href="../assets/img/pic8z/Base_ios.png" title="基本信息页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Base_ios.png" class="img-thumbnail" alt="基本信息页面" />
+    <a href="../assets/img/pic129/Base_129_android.png" title="基本信息頁面" data-gallery>
+      <img src="../assets/img/pic129/thumbnails/Base_129_android.png" class="img-thumbnail" alt="基本信息頁面" />
     </a>
-    <a href="../assets/img/pic8z/Bp_ios.png" title="基本盘页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Bp_ios.png" class="img-thumbnail" alt="基本盘页面" />
+    <a href="../assets/img/pic129/Xk_129_android.png" title="玄空盤面" data-gallery>
+      <img src="../assets/img/pic129/thumbnails/Xk_129_android.png" class="img-thumbnail" alt="玄空盤面" />
     </a>
-    <a href="../assets/img/pic8z/Xp_ios.png" title="细盘页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Xp_ios.png" class="img-thumbnail" alt="细盘页面" />
+    <a href="../assets/img/pic129/8z_129_android.png" title="八宅盤面" data-gallery>
+      <img src="../assets/img/pic129/thumbnails/8z_129_android.png" class="img-thumbnail" alt="八宅盤面" />
     </a>
-    <a href="../assets/img/pic8z/Dy_ios.png" title="大运盘页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Dy_ios.png" class="img-thumbnail" alt="大运盘页面" />
+    <a href="../assets/img/pic129/Pz_129_android.png" title="評註信息" data-gallery>
+      <img src="../assets/img/pic129/thumbnails/Pz_129_android.png" class="img-thumbnail" alt="評註信息" />
     </a>
   </div>  
-  <div class="centerText"><span>【以最终版本为准】</span></div>   
+
+  <div class="centerText"><span>【以最終版本為準】</span></div>   
 
     <!-- The Gallery as lightbox dialog -->
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -171,7 +172,7 @@
     <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
     <div class="row sectionHeaderRow">      
       <div class="col">
-        <h4><span class="sectionHeaderText">功能介绍</span></h4>
+        <h4><span class="sectionHeaderText">功能介紹</span></h4>
       </div>
   </div>    
   <div class="centerText"><span>&nbsp;</span></div>   <!-- 增加一个空行-->
@@ -179,8 +180,10 @@
   <div class="row">
     <div class="col"></div>
     <div class="col-8">
-      <p>论八字是一个计算八字的算命软体。根据输入的西历或农历时间，排出命主的八字资讯，大运，小运，流年，空亡，胎息，胎元，命宫及五行信息等；细盘功能(四柱，当前大运，流年盘)；二十八宿信息。</p>
-      <p>本软体主要是提供给对道家和玄学有一定研究或者兴趣的人士学习实践之用。软体在推出后，得到东南亚，香港，台湾和中国内地用家的多方面好评，结果也经过实践检验，具有一定的准确性，本着推广交流的目的，也希望得到更多用家回馈意见。</p>
+      <p>論風水是一個計算风水的算命軟體。根据方位显示玄空飞星。</p>
+      <p>根據輸入房屋的入夥時間及其坐向，計算出運盤，山盤和向盤。</p>
+      <p>坐向可以手工輸入或者通過電子羅盤獲取。</p>
+      <p>最後可以根據三盤的基本資訊給出參考評述。</p>
     </div>
     <div class="col"></div>
   </div>
@@ -190,19 +193,25 @@
     <div class="col-8">
       <div class="container">
         <ul class="list-group">
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>对命例的资料做删除或者修改；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支援夜子时的处理手法及偏好设置；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>年月日时柱排列从左到右的可选；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>强大实用的细盘功能，大运和流年互相关联，点击大运流年可以互动大运未起以小运代替，小运和流年互相关联；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>袁天罡称骨；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>生肖以立春或农历年为标准选项；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>盘面五色显示，五行属性及力量对比更加突出；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>细盘支持流月五色显示；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>命例资料支持公历，农历及四柱输入；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>包含《三命通会》《神峰通考》等相关评语；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>命例可资料模糊查询；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支持简繁中文；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-list-ol"></i>...更多功能请下载使用体验。</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>完善了手動輸入坐向並計算三盤功能；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加坐向的顯示；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>調整以適應小螢幕；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加電子羅盤功能；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加九星評論；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>調整界面和減少廣告；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加羅盤偏好設置，可選簡單和三層羅盤；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加圓盤和方盤切換功能和設定；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加定向功能和設定；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加八宅理論中命和宅的類別資訊顯示；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加八宅盤（命盤，宅盤和流年盤）；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加了兼盤的支持和偏好設置；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加了流年紫白和盤面提示資訊；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加旺山旺向,上山下水,雙星會山和雙星會向的提示判別；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加飛星合十，伏吟，反吟，連珠三般卦，父母三般卦，離宮七星打劫，坎宮七星打劫的提示；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加伏吟和七星打劫提示的偏好設置；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>增加城門提示和偏好設置；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>增加四柱五色顯示；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-list-ol"></i>...更多功能請下載使用體驗。</li>
         </ul>
       </div>  
     </div>
@@ -218,7 +227,7 @@
   <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
   <div class="row sectionHeaderRow">      
     <div class="col">
-      <h4><span class="sectionHeaderText">应用市场和下载</span></h4>
+      <h4><span class="sectionHeaderText">應用市場和下載</span></h4>
     </div>
 </div>    
 <div class="centerText"><span>&nbsp;</span></div>   <!-- 增加一个空行-->
@@ -228,33 +237,34 @@
   <div class="col-6">
     <table class="table">
       <tbody>
-        <tr>
+        <!-- 目前没有收费部分 -->
+        <!-- <tr>
           <td>
             <div class="row">
-              <div class="col-sm-3"><span class="centerVText">收费专业</span></div>
+              <div class="col-sm-3"><span class="centerVText">收費專業</span></div>
               <div class="col-sm-3">
-                <a href="https://itunes.apple.com/cn/app/%E8%AB%96%E5%85%AB%E5%AD%97-%E5%AF%A6%E7%94%A8/id504176984?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+                <a href="https://itunes.apple.com/cn/app/%E8%B5%B7%E5%90%8D-%E5%AF%A6%E7%94%A8/id504129874?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
               </div>
               <div class="col-sm-3">
-                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc8wordsp" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calcyip" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
               </div>
               <div class="col-sm-3">
               </div>
             </div>
           </td>
-        </tr>
+        </tr> -->
         <tr>
           <td>
             <div class="row">
-              <div class="col-sm-3"><span class="centerVText">免费广告</span></div>
+              <div class="col-sm-3"><span class="centerVText">免費廣告</span></div>
+              <!-- <div class="col-sm-3">
+                <a href="https://itunes.apple.com/cn/app/icalcname/id463198141?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+              </div> -->
               <div class="col-sm-3">
-                <a href="https://itunes.apple.com/cn/app/icalc8words/id466778987?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc129" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
               </div>
               <div class="col-sm-3">
-                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc8words" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
-              </div>
-              <div class="col-sm-3">
-                <a href="http://www.appchina.com/app/gz.aas.calc8words" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 应用汇</a>
+                <a href="http://www.appchina.com/app/gz.aas.calc129" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 應用匯</a>
               </div>
             </div>
           </td>

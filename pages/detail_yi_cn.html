@@ -1,5 +1,5 @@
 <!-- ======== aas4calcapps.com website的实现，主要采用bootstrap技术  ========== -->
-<!-- ======== 论八字的详细信息                                       ========== -->
+<!-- ======== 奇门的详细信息                                       ========== -->
 <!-- ======== Author: Jonathan Yang, 2020/03/14                   ========== -->
 <!-- ======== Default Lang: 繁体                                   ========== -->
 <!-- ======== 后缀: 无 - 繁体；_cn: 简体 _en: 英文                   ========== -->
@@ -10,7 +10,7 @@
 <!-- header的定义 -->
 <head>
   <meta charset="utf-8">
-  <title>A.A.S 软体介绍 - 论八字</title>
+  <title>A.A.S 软体介绍 - 易爻</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Website for AAS" />
   <meta name="author" content="Jonathan Yang" />
@@ -34,7 +34,7 @@
   <!-- ======= Header ======= -->
   <header id="aasHeader" class="fixed-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/icalc8words_icon_72.png" alt="" width="40" height="40" /></a>
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/calcyi_icon_72.png" alt="" width="40" height="40" /></a>
       <!-- 顶部导航条的按钮 -->
       <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">切换语言</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item navMenuItem" href="detail_8z.html">繁体中文</a>
+              <a class="dropdown-item navMenuItem" href="detail_yi.html">繁体中文</a>
               <a class="dropdown-item" href="#">简体中文</a>
             </div>
           </li>          
@@ -101,7 +101,7 @@
     <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
     <div class="row sectionHeaderRow">      
         <div class="col">
-          <h3><span class="sectionHeaderText">【论八字】详情</span></h3>
+          <h3><span class="sectionHeaderText">【易爻】详情</span></h3>
         </div>
     </div>    
         <!-- 定义 第一行3个产品简单介绍 -->
@@ -111,11 +111,11 @@
         <div class="row">
           <div class = "col-4"></div>
           <div class = "col-4">
-            <img class="img-fluid" src="../assets/img/prod/calc8words_icon_512.png" alt="论八字">
+            <img class="img-fluid" src="../assets/img/prod/calcYi_icon_512.png" alt="易爻">
               </div>
               <div class = "col-4"></div>
         </div>
-        <h5> 专业的八字排盘系统，可以准确快捷排出四柱,当前大运,流年盘等。</h5>       
+        <h5>专业的易经占卜排盘工具，可以准确排出六爻、易数和卦爻盘，支持六爻，时间，各种数字起盘方法。</h5>       
       </div>
       <div class="col-3"></div>
   </div>
@@ -134,22 +134,23 @@
   <div class="centerText"><span class="aas_smallText">【点击看大图 若网慢需等】</span></div>   
 
   <div id="links" class="img_gallery">
-    <a href="../assets/img/pic8z/Input_ios.png" title="输入页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Input_ios.png" class="img-thumbnail" alt="输入页面" />
+    <a href="../assets/img/picyi/Input_yi_ios.png" title="输入页面" data-gallery>
+      <img src="../assets/img/picyi/thumbnails/Input_yi_ios.png" class="img-thumbnail" alt="输入页面" />
     </a>
-    <a href="../assets/img/pic8z/Base_ios.png" title="基本信息页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Base_ios.png" class="img-thumbnail" alt="基本信息页面" />
+    <a href="../assets/img/picyi/Gx_yi_ios.png" title="卦象页面" data-gallery>
+      <img src="../assets/img/picyi/thumbnails/Gx_yi_ios.png" class="img-thumbnail" alt="卦象页面" />
     </a>
-    <a href="../assets/img/pic8z/Bp_ios.png" title="基本盘页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Bp_ios.png" class="img-thumbnail" alt="基本盘页面" />
+    <a href="../assets/img/picyi/Gy_yi_ios.png" title="卦爻页面" data-gallery>
+      <img src="../assets/img/picyi/thumbnails/Gy_yi_ios.png" class="img-thumbnail" alt="卦爻页面" />
     </a>
-    <a href="../assets/img/pic8z/Xp_ios.png" title="细盘页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Xp_ios.png" class="img-thumbnail" alt="细盘页面" />
+    <a href="../assets/img/picyi/6y_yi_ios.png" title="六爻页面" data-gallery>
+      <img src="../assets/img/picyi/thumbnails/6y_yi_ios.png" class="img-thumbnail" alt="六爻页面" />
     </a>
-    <a href="../assets/img/pic8z/Dy_ios.png" title="大运盘页面" data-gallery>
-      <img src="../assets/img/pic8z/thumbnails/Dy_ios.png" class="img-thumbnail" alt="大运盘页面" />
+    <a href="../assets/img/picyi/Data_yi_ios.png" title="数据管理页面" data-gallery>
+      <img src="../assets/img/picyi/thumbnails/Data_yi_ios.png" class="img-thumbnail" alt="数据管理页面" />
     </a>
   </div>  
+
   <div class="centerText"><span>【以最终版本为准】</span></div>   
 
     <!-- The Gallery as lightbox dialog -->
@@ -179,8 +180,8 @@
   <div class="row">
     <div class="col"></div>
     <div class="col-8">
-      <p>论八字是一个计算八字的算命软体。根据输入的西历或农历时间，排出命主的八字资讯，大运，小运，流年，空亡，胎息，胎元，命宫及五行信息等；细盘功能(四柱，当前大运，流年盘)；二十八宿信息。</p>
-      <p>本软体主要是提供给对道家和玄学有一定研究或者兴趣的人士学习实践之用。软体在推出后，得到东南亚，香港，台湾和中国内地用家的多方面好评，结果也经过实践检验，具有一定的准确性，本着推广交流的目的，也希望得到更多用家回馈意见。</p>
+      <p>易爻，易经中的数学。是一款根据梅花易数的和六爻原理进行占卜的软体。</p>
+
     </div>
     <div class="col"></div>
   </div>
@@ -190,18 +191,18 @@
     <div class="col-8">
       <div class="container">
         <ul class="list-group">
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>对命例的资料做删除或者修改；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支援夜子时的处理手法及偏好设置；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>年月日时柱排列从左到右的可选；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>强大实用的细盘功能，大运和流年互相关联，点击大运流年可以互动大运未起以小运代替，小运和流年互相关联；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>袁天罡称骨；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>生肖以立春或农历年为标准选项；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>盘面五色显示，五行属性及力量对比更加突出；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>细盘支持流月五色显示；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>命例资料支持公历，农历及四柱输入；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>包含《三命通会》《神峰通考》等相关评语；</li>
-          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>命例可资料模糊查询；</li>
-          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支持简繁中文；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>采用梅花易数中数位起卦的方式，采用的是两个数位起卦方式；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>结合占卜的时间，排列出本卦，互卦和变卦各个卦象；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>根据各个卦象之间的五行关系列出吉凶；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>排列出起卦时间对应的五行四柱，给占卜更多参考资讯；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支援时间起卦；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支援六爻起卦和六爻分析盘；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支援9种数字起卦方法；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支援基础说明；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支援卦象和参考评论；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>支援保存和维护起卦资料；</li>
+          <li class="list-group-item list-group-item-dark"><i class="fa fa-tags"></i>支援反吟，伏吟的判断提示；</li>
+          <li class="list-group-item list-group-item-light"><i class="fa fa-tags"></i>提供周易卦和爻的内容；</li>
           <li class="list-group-item list-group-item-dark"><i class="fa fa-list-ol"></i>...更多功能请下载使用体验。</li>
         </ul>
       </div>  
@@ -233,10 +234,10 @@
             <div class="row">
               <div class="col-sm-3"><span class="centerVText">收费专业</span></div>
               <div class="col-sm-3">
-                <a href="https://itunes.apple.com/cn/app/%E8%AB%96%E5%85%AB%E5%AD%97-%E5%AF%A6%E7%94%A8/id504176984?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+                <a href="https://itunes.apple.com/cn/app/%E6%98%93%E7%88%BB-%E5%AF%A6%E7%94%A8/id586604476?l=zh&ls=1&mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
               </div>
               <div class="col-sm-3">
-                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc8wordsp" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calcyip" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
               </div>
               <div class="col-sm-3">
               </div>
@@ -248,13 +249,13 @@
             <div class="row">
               <div class="col-sm-3"><span class="centerVText">免费广告</span></div>
               <div class="col-sm-3">
-                <a href="https://itunes.apple.com/cn/app/icalc8words/id466778987?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
+                <a href="https://itunes.apple.com/cn/app/yi-yao-free/id586220860?mt=8" class="btn btn-dark btn_aas_space"><i class="fa fa-apple"></i> App Store</a>
               </div>
               <div class="col-sm-3">
-                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc8words" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=gz.aas.calc2yi" class="btn btn-dark btn_aas_space"><i class="fa fa-android"></i> Google Play</a>
               </div>
               <div class="col-sm-3">
-                <a href="http://www.appchina.com/app/gz.aas.calc8words" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 应用汇</a>
+                <a href="http://www.appchina.com/app/gz.aas.calc2yi" class="btn btn-secondary btn_aas_space"><i class="fa fa-android"></i> 应用汇</a>
               </div>
             </div>
           </td>
