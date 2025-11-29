@@ -1,0 +1,202 @@
+<!-- ======== aas4calcapps.com website的实现，主要采用bootstrap技术  ========== -->
+<!-- ======== 金口诀的私隐条例                                       ========== -->
+<!-- ======== Author: Jonathan Yang, 2021/05/03                   ========== -->
+<!-- ======== Default Lang: 繁体                                   ========== -->
+<!-- ======== 后缀: 无 - 繁体；_cn: 简体 _en: 英文                   ========== -->
+
+<!doctype html>
+<html lang="en">
+
+<!-- header的定义 -->
+<head>
+  <meta charset="utf-8">
+  <title>A.A.S 軟體介紹 - 金口訣</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website for AAS" />
+  <meta name="author" content="Jonathan Yang" />
+  <!-- 公共的函数库styles -->
+  <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- for Gallery -->
+  <link href="../libs/gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
+
+  <!-- aasWebsite使用的styles -->
+  <link href="../assets/css/style.css" rel="stylesheet" />
+  <!-- 注释掉，使用回bootstrap自带的效果 -->
+  <!-- <link href="assets/css/aasNavBarOff.css" rel="stylesheet" /> -->
+
+</head>
+
+<!-- body的定义 -->
+<!-- 增加滚动监听 JonathanYang, 20200308 -->
+<!-- 增加不允许按右键 选择copy的功能 JonathanYang, 20200308 -->
+<body data-spy="scroll" data-target="#aasNavbars" data-offset="20" oncontextmenu="return false" onselectstart="return false">
+  <!-- ======= Header ======= -->
+  <header id="aasHeader" class="fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">A.A.S&nbsp;&nbsp;<img class="rounded-circle" src="../assets/icon/calcjkj_icon_72.png" alt="" width="40" height="40" /></a>
+      <!-- 顶部导航条的按钮 -->
+      <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aasNavbars" aria-controls="aasNavbars" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 顶部导航条 aasNavBarOff-collapse -->
+      <div class="collapse navbar-collapse" id="aasNavbars">
+        <!-- ml-auto 居右对齐； mr-auto 居左对齐；Jonathan Yang, 20200307 -->
+        <ul class="navbar-nav ml-auto navBarRightSpace" >
+          <!-- 产品页专用的菜单 -->
+          <!-- <li class="nav-item"><a class="nav-link navMenuItem" href="#detailScreens" >應用截屏</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailInfos" >功能介紹</a></li>
+          <li class="nav-item"><a class="nav-link navMenuItem" href="#detailDownload" >下 載</a></li> -->
+
+          <!-- 分割条 只在收缩起来时候起作用 -->
+          <!-- <div class="dropdown-divider"></div> -->
+
+          <!-- active 的状态切换 统一由滚动监听管理 JonathanYang, 20200308 -->   
+          <!-- <li class="nav-item active"> -->
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#aasInfo">首 頁 <span class="sr-only">(current)</span></a> -->
+            <a class="nav-link navMenuItem" href="../index.html#aasInfo" >首 頁</a>
+          </li>
+          <!-- 软件列表 -->
+          <li class="nav-item">
+            <a class="nav-link navMenuItem" href="../index.html#prodInfo" >軟體列表</a>
+          </li>
+
+          <!-- 经验分享 未来扩展部分 -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" id="mExp">使用經驗</a>
+          </li> -->
+
+          <!-- 易学知识 未来扩展部分-->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" id="mYi">易學知識</a>
+          </li> -->
+
+          <!-- 联系我们-->
+          <li class="nav-item">
+            <a class="nav-link navMenuItem" href="../index.html#contractInfo" >聯系我們</a>
+          </li>
+          
+          <!-- 切换语言-->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">切換語言</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item navMenuItem" href="#">繁體中文</a>
+              <a class="dropdown-item" href="detail_qm_cn.html">简体中文</a>
+            </div>
+          </li>           -->
+        </ul>
+
+      </div>
+    
+   </nav>
+  </header><!-- End Header -->
+
+<main role="main">
+
+<!-- 私隐条例部分 -->
+<section id="detailPrivacy">
+    <!-- 标题 -->
+    <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+    <div class="row sectionHeaderRow">      
+      <div class="col">
+        <h4><span class="sectionHeaderText">【金口訣(實用)】隱私政策</span></h4>
+      </div>
+  </div>    
+  <div class="centerText"><span>&nbsp;</span></div>   <!-- 增加一个空行-->
+
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-8">
+      <p>應用名：金口訣(實用)</p>
+      <p>開發者：YANG JIAN</p>
+      <p>「金口訣(實用)」應用尊重並保護所有使用者的個人隱私權。爲了給您提供更準確、更有個性化的服務，應用會按照本隱私權政策的規定使用和披露您的個人信息。應用將以審慎的態度對待這些信息。除本隱私權政策另有規定外，在未徵得您事先許可的情況下，本應用不會將這些信息對外披露或向第三方提供。本應用會不時更新本隱私權政策。您在同意本應用服務使用協議之時，即視爲您已經同意本隱私權政策全部內容。本隱私權政策屬於本應用服務使用協議不可分割的一部分。</p>
+      <p>1. 適用範圍
+        <br>a. 如果您使用本應用的網絡服務，本應用會自動接收並記錄的您的瀏覽器和設備上的信息，包括但不限於您的IP地址、瀏覽器的類型、使用的語言、訪問日期和時間、軟硬件特徵信息及您需求的網頁記錄等數據；
+        <br>b. 在您使用本應用時候，本應用如果出現錯誤，會記錄一些關鍵的設備信息，包括但不限於您的IP地址、設備名稱、操作系統版本等。  
+        <br>c. 本應用通過合法途徑從第三方處取得的用戶個人數據。</p>
+      <p>
+        2. 信息的收集和使用
+        <br>a. 本應用不會向任何無關第三方提供、出售、出租、分享或交易您的個人信息，除非事先得到您的許可。
+        <br>b. 本應用亦不允許任何第三方以任何手段收集、編輯、出售或者無償傳播您的個人信息。
+        <br>c. 爲了更好提供服務，本應用會使用第三方分析工具SDK，它會在合法情況下記錄有限的信息，包括但不限於您的IP地址、設備名稱、操作系統版本等。
+      </p>
+      <p>
+        3. 信息披露
+        <br>在如下情況下，本應用將依據您的個人意願或法律的規定全部或部分的披露您的個人信息：
+        <br>(a) 爲提供您所要求的產品和服務，而必須和第三方分享您的個人信息；
+        <br>(b) 根據法律的有關規定，或者行政或司法機構的要求，向第三方或者行政、司法機構披露；
+        <br>(c) 如您出現違反中國有關法律、法規或者本應用服務協議或相關規則的情況，需要向第三方披露；
+        <br>(d) 如您是適格的知識產權投訴人並已提起投訴，應被投訴人要求，向被投訴人披露，以便雙方處理可能的權利糾紛；
+        <br>(e) 其它本應用根據法律、法規或者網站政策認爲合適的披露。
+      </p>  
+      <p>
+        4. 信息存儲和交換
+        <br>本應用收集的有關您的信息和資料將保存在本應用及（或）其關聯公司的服務器上，這些信息和資料可能傳送至您所在國家、地區或本應用收集信息和資料所在地的境外並在境外被訪問、存儲和展示。
+      </p>
+      <p>
+        5. Cookie的使用
+        <br>Cookie是具有少量數據的文件，通常用作匿名唯一標識符。這些內容將從您訪問的網站發送到您的瀏覽器，並存儲在設備的內部存儲器中。
+        <br>本應用不使用這些“Cookie”。但是可能會使用第三方代碼和使用“cookies”的庫來收集信息並改進其服務。您可以選擇接受或拒絕這些cookie，並知道何時將cookie發送到您的設備。如果您選擇拒絕我們的cookie，您可能無法使用本應用的某些部分。
+      </p>
+      <p>
+        6. 信息安全
+        <br>我們非常重視您向我們提供您的個人信息，因此我們正在努力使用商業上可接受的方式來保護您的個人信息。但請記住，沒有通過互聯網傳輸的方法或電子存儲方法是100％安全可靠的，我們無法保證其絕對的安全性。
+      </p>
+      <p>
+        7. 本隱私政策的更改
+        <br>我們可能會不時更新我們的隱私政策。因此，建議您定期查看此頁面以瞭解任何更改。我們將通過在此頁面上發佈新的隱私政策來通知您任何更改。這些更改在此頁面上發佈後立即生效。
+      </p>
+      <p>
+        8. 聯繫我們
+        <br>如果您對我們的隱私政策有任何問題或建議，請隨時與我們聯繫(mailto:jonathan88s@gmail.com)。        
+      </p>
+    </div>
+    <div class="col"></div>
+  </div>
+
+</section>
+
+<!-- 隔开位置 -->
+<section id="detailSpace">
+  <div class = "sectionHeaderRow"></div>  <!-- 增加一个空行-->
+  <div class="row sectionHeaderRow">      
+    <div class="col">
+      <h4><span class="sectionHeaderText"></span></h4>
+    </div>
+</section>
+
+</main>
+
+<!-- scrollup -->
+<a href="#" id="backToTopBtn" class="back-to-top">
+  <i class="fa fa-chevron-up icon-square icon-48 active"></i>
+</a>
+
+<!-- footer部分 -->  
+<footer>
+  <row>
+    <div class="aasBottom">
+    <p>&copy; A.A.S 2010-2040 All right reserved</p>
+    </div>
+  </row>
+</footer>
+
+  <!-- 主要的JS的库文件 -->
+  <script src="../libs/jquery/jquery.min.js"></script>
+  <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../libs/jquery.easing/jquery.easing.min.js"></script>
+
+  <!-- for Gallery, 只是产品介绍的页面需要 JonathanYang, 20200315 -->
+  <!-- <script src="../libs/gallery/js/blueimp-gallery.min.js"></script> -->
+  <script src="../libs/gallery/js/jquery.blueimp-gallery.min.js"></script>
+  
+  <!-- AAS自己定义的JS库文件 -->
+  <!-- 注释掉，使用回bootstrap自带的滚动监听管理 -->
+  <script src="../js/aasMain.js"></script>
+
+  <script>
+    </script>
+</body>
+
+</html>
